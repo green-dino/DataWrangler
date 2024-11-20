@@ -1,0 +1,3 @@
+# Open Source Community 
+
+Rye is dedicated to empowering others through mentoring and coaching. They actively contribute to the development of college students by providing guidance and support, helping them navigate technical challenges and achieve their academic goals. Additionally, Rye conducts workshops for community members, offering valuable insights into technical considerations and fostering a deeper understanding of technology. Their commitment to education and community engagement makes a significant impact, bridging the gap between technical knowledge and practical application.

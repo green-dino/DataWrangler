@@ -1,0 +1,94 @@
+# mkdocs.yml
+site_name: Open Source Energy Collaboration  
+nav:  
+  - Home: index.md  
+  - About:  
+      - Mission & Vision: about/mission.md  
+      - Core Values: about/core_values.md  
+  - Expertise:  
+      - Technical Skills: expertise/technical_skills.md  
+      - Management & Communication: expertise/management_communication.md  
+      - Interpersonal & Organizational Skills: expertise/interpersonal_skills.md  
+  - Projects:  
+      - Data Visualization: projects/data_visualization.md  
+      - Data Analysis: projects/data_analysis.md  
+      - PDF Scraping & Record Linkage: projects/pdf_record_linkage.md  
+      - Python ETL Workflows: projects/python_etl.md  
+  - Collaboration:  
+      - Open Source Community: collaboration/community.md  
+      - Stakeholder Engagement: collaboration/stakeholders.md  
+      - Business Development: collaboration/business_development.md  
+  - Resources:  
+      - Grant Writing: resources/grant_writing.md  
+      - Project Management: resources/project_management.md  
+      - Remote Work Best Practices: resources/remote_work.md  
+  - Contact: contact.md  
+
+
+theme:
+  name: material  # Using the MkDocs Material theme
+  features:
+    - navigation.tabs
+    - navigation.footer
+    - navigation.top
+    - toc.integrate
+    - instant
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+  
+
+markdown_extensions:
+  - toc:  # Table of Contents generation
+      permalink: true
+  - footnotes  # Support for footnotes in Markdown
+  - admonition  # Support for tips, warnings, and notes
+  - codehilite:  # Syntax highlighting for code blocks
+      guess_lang: false
+  - pymdownx.superfences  # Advanced code block rendering
+    # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search
+
+
+extra_javascript:
+  - js/custom.js
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
